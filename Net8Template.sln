@@ -3,13 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net8Template", "Net8Template\Net8Template.csproj", "{E84B0A8C-8A06-434B-804B-C77578D8A171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net8Template", "Net8Template\Net8Template.csproj", "{E84B0A8C-8A06-434B-804B-C77578D8A171}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F4AC40D-E664-4E92-A718-4C92E71CD0AF} = {8F4AC40D-E664-4E92-A718-4C92E71CD0AF}
+		{F36684CD-3F70-450F-951A-966D628EC932} = {F36684CD-3F70-450F-951A-966D628EC932}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLRepository", "SQLRepository\SQLRepository.csproj", "{09E3DB25-611A-4EC2-A5BB-CB888A05C489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLRepository", "SQLRepository\SQLRepository.csproj", "{09E3DB25-611A-4EC2-A5BB-CB888A05C489}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F36684CD-3F70-450F-951A-966D628EC932} = {F36684CD-3F70-450F-951A-966D628EC932}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRepository", "IRepository\IRepository.csproj", "{8F4AC40D-E664-4E92-A718-4C92E71CD0AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepository", "IRepository\IRepository.csproj", "{8F4AC40D-E664-4E92-A718-4C92E71CD0AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{09E3DB25-611A-4EC2-A5BB-CB888A05C489} = {09E3DB25-611A-4EC2-A5BB-CB888A05C489}
+		{F36684CD-3F70-450F-951A-966D628EC932} = {F36684CD-3F70-450F-951A-966D628EC932}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F36684CD-3F70-450F-951A-966D628EC932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{F36684CD-3F70-450F-951A-966D628EC932}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
